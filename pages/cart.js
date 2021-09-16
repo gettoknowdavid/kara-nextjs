@@ -1,15 +1,19 @@
+import React from 'react';
 import { DisplayLarge } from 'baseui/typography';
 import Layout from '../layout';
 import Container from '@/atoms/container';
 
-function Home() {
+function Cart() {
+  const seo = {
+    metaTitle: 'Cart',
+  };
   return (
-    <Layout seo={{ metaTitle: 'Welcome' }}>
+    <Layout seo={seo}>
       <Container>
-        <DisplayLarge>Kara</DisplayLarge>
+        <DisplayLarge>Cart</DisplayLarge>
       </Container>
     </Layout>
   );
 }
 
-export default Home;
+export default Cart;

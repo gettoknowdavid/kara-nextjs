@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/contents/*": ["contents/*"],
+      "@/atoms/*": ["components/atoms/*"],
+      "@/molecules/*": ["components/molecules/*"],
+      "@/organisms/*": ["components/organisms/*"],
+      "@/slices/*": ["redux/slices/*"],
+      "@/redux/*": ["redux/*"],
+      "@/fragment/*": ["graphql/fragment/*"],
+      "@/mutation/*": ["graphql/mutation/*"],
+      "@/query/*": ["graphql/query/*"]
+    }
+  }
+}
