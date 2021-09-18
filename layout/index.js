@@ -4,11 +4,13 @@ import { StyledLayoutBody, StyledLayout } from './layout.styles';
 import Seo from '../lib/seo';
 import Header from '@/organisms/header';
 import Footer from '@/organisms/footer';
+import BagDrawer from '@/organisms/bag-drawer';
 
 function Layout({ children, seo }) {
   return (
     <StyledLayout>
       <Seo seo={seo} />
+      <BagDrawer />
       <Header />
       <StyledLayoutBody>
         {children}

@@ -2,24 +2,16 @@ import React from 'react';
 import { signOut, useSession } from 'next-auth/client';
 import { Block } from 'baseui/block';
 import { FlexGrid, FlexGridItem } from 'baseui/flex-grid';
-import { useStyletron } from 'baseui';
-import {
-  HeadingLarge, HeadingSmall, HeadingXSmall, ParagraphMedium, ParagraphSmall, ParagraphXSmall,
-} from 'baseui/typography';
-import { Pencil, Trash } from 'phosphor-react';
 import Divider, { DIRECTION } from '@/atoms/divider';
 import Container from '@/atoms/container';
 import {
   AccountDetailTitle,
   LogoutButton, UserEmail, UserInfoWrapper, UserName,
 } from './account.styles';
-import Button from '@/atoms/button';
-import AddressCard from '@/molecules/address-card';
 import AddressList from '@/molecules/address-list';
 import OrderList from '@/molecules/order-list';
 
-function AccountContents({ addresses }) {
-  const [css, theme] = useStyletron();
+function AccountContents() {
   const [session] = useSession();
   const { firstName, lastName, email } = session.user;
   return (
@@ -36,9 +28,10 @@ function AccountContents({ addresses }) {
         />
         <LogoutButton onClick={() => signOut()}>Logout</LogoutButton>
       </UserInfoWrapper>
-      <Block marginTop="30px">
+      <Block marginTop="40px">
         <FlexGrid
           flexGridColumnCount={[1, 1, 3, 3]}
+          flexGridRowGap="scale1000"
           flexGridColumnGap={['scale400', 'scale400', 'scale700', 'scale1000']}
         >
           <FlexGridItem>

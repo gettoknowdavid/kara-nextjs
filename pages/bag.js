@@ -3,17 +3,14 @@ import { DisplayLarge } from 'baseui/typography';
 import Layout from '../layout';
 import Container from '@/atoms/container';
 
-function Cart() {
-  const seo = {
-    metaTitle: 'Cart',
-  };
+function Bag() {
   return (
-    <Layout seo={seo}>
+    <Layout seo={{ metaTitle: 'Bag' }}>
       <Container>
-        <DisplayLarge>Cart</DisplayLarge>
+        <DisplayLarge>Bag</DisplayLarge>
       </Container>
     </Layout>
   );
 }
 
-export default Cart;
+export default Bag;

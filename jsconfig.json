@@ -10,7 +10,8 @@
       "@/redux/*": ["redux/*"],
       "@/fragment/*": ["graphql/fragment/*"],
       "@/mutation/*": ["graphql/mutation/*"],
-      "@/query/*": ["graphql/query/*"]
+      "@/query/*": ["graphql/query/*"],
+      "@/hooks/*": ["hooks/*"]
     }
   }
 }

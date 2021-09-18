@@ -22,10 +22,10 @@ function Container({
 Container.propTypes = {
   children: PropTypes.node.isRequired,
   minHeight: PropTypes.string,
-  paddingTop: PropTypes.array,
-  paddingRight: PropTypes.array,
-  paddingBottom: PropTypes.array,
-  paddingLeft: PropTypes.array,
+  paddingTop: PropTypes.any,
+  paddingRight: PropTypes.any,
+  paddingBottom: PropTypes.any,
+  paddingLeft: PropTypes.any,
 };
 
 Container.defaultProps = {
